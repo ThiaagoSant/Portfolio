@@ -1,10 +1,10 @@
 /*--imports---*/
 
-/*--font---*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+	/*--font---*/
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
-/*--FW--*/
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+	/*--FontAS--*/
+	@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
 
 /*--resets--*/
 * {
@@ -15,3 +15,61 @@
 	outline: 0;
 	text-decoration: none;
 }
+
+li {
+	list-style: none;
+}
+
+/*--Header, logo and navbar styling--*/
+
+header {
+	background-color: crimson;
+	height: 80px;
+	position: fixed;
+	width: 100%;
+}
+
+header .max-width {
+	margin: auto;
+	max-width: 1300px;
+	padding: 0 2%;
+	width: 100%
+}
+
+ .navbar .logo a {
+	color: white;
+	font-size: 35px;
+	font-weight: 600;
+}
+
+.navbar ul li {
+	display: inline-block;
+}
+
+.navbar ul li a {
+	color: white;
+	padding-left: 25px;
+}
+
+.navbar .logo, li a {
+	font-family: 'Ubuntu', sans-serif;
+}  
+
+.nav-flex {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	height: 80px;
+	justify-content: space-between;
+}
+
+
+
+
+
+
