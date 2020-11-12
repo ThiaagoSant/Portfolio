@@ -1,10 +1,10 @@
 /*--imports---*/
 
-	/*--font---*/
-	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+/*--font---*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
-	/*--FontAS--*/
-	@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+/*--FontAS--*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
 
 /*--resets--*/
 * {
@@ -23,10 +23,16 @@ li {
 /*--Header, logo and navbar styling--*/
 
 header {
-	background-color: crimson;
-	height: 80px;
+	padding: 30px 0;
 	position: fixed;
+	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
 	width: 100%;
+}
+
+header.sticky {
+	background-color: crimson;
+	padding: 15px 0;
 }
 
 header .max-width {
@@ -36,10 +42,18 @@ header .max-width {
 	width: 100%
 }
 
- .navbar .logo a {
+.navbar .logo a {
 	color: white;
 	font-size: 35px;
 	font-weight: 600;
+}
+
+.navbar .logo a span {
+	color: crimson;
+}
+
+header.sticky .logo a span {
+	color: white;
 }
 
 .navbar ul li {
@@ -49,9 +63,19 @@ header .max-width {
 .navbar ul li a {
 	color: white;
 	padding-left: 25px;
+	-webkit-transition: color .3s ease;
+	transition: color .3s ease;
 }
 
-.navbar .logo, li a {
+.navbar ul li a:hover {
+	color: crimson;
+}
+
+header.sticky .navbar ul li a:hover {
+	color: #4b0303;
+}
+
+.navbar .logo, li a, .inicio {
 	font-family: 'Ubuntu', sans-serif;
 }  
 
@@ -64,12 +88,47 @@ header .max-width {
 	display: flex;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
-	height: 80px;
 	justify-content: space-between;
 }
 
+/*---Inicio section styling---*/
+
+.inicio {
+	background: url("../img/wallpaper.jpg") no-repeat center;
+	color: white;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 100vh;
+	min-height: 500px;
+}
+
+.inicio .max-width {
+	margin: 250px 0 auto 60px;
+}
 
 
+.inicio .inicio-content .txt1{
+	font-size: 29px;
+	margin-bottom: 15px;
+}
+
+.inicio .inicio-content .txt2{
+	font-size: 60px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+
+.inicio .inicio-content .txt3{
+	font-size: 40px;
+	margin: 5px 0;
+}
+
+.inicio .inicio-content .txt3 span {
+	color: crimson;
+	font-weight: 500;
+}
 
 
 
