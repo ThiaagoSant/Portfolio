@@ -11,8 +11,8 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0;
 	outline: 0;
+	padding: 0;
 	text-decoration: none;
 }
 
@@ -38,7 +38,7 @@ header.sticky {
 header .max-width {
 	margin: auto;
 	max-width: 1300px;
-	padding: 0 2%;
+	padding: 0 4%;
 	width: 100%
 }
 
@@ -62,6 +62,7 @@ header.sticky .logo a span {
 
 .navbar ul li a {
 	color: white;
+	font-size: 18px;
 	padding-left: 25px;
 	-webkit-transition: color .3s ease;
 	transition: color .3s ease;
@@ -75,7 +76,7 @@ header.sticky .navbar ul li a:hover {
 	color: #4b0303;
 }
 
-.navbar .logo, li a, .inicio {
+.navbar .logo, li a, .inicio, .inicio-content {
 	font-family: 'Ubuntu', sans-serif;
 }  
 
@@ -91,6 +92,16 @@ header.sticky .navbar ul li a:hover {
 	justify-content: space-between;
 }
 
+/*---menu-btn styling---*/
+
+.menu-btn, .menu-btn i {
+	color: white;
+	cursor: pointer;
+	display: none;
+	font-size: 30px;
+}
+
+
 /*---Inicio section styling---*/
 
 .inicio {
@@ -100,11 +111,11 @@ header.sticky .navbar ul li a:hover {
 	display: -ms-flexbox;
 	display: flex;
 	height: 100vh;
-	min-height: 500px;
+	min-height: 600px;
 }
 
 .inicio .max-width {
-	margin: 250px 0 auto 60px;
+	margin: 250px 0 auto 6%;
 }
 
 
@@ -123,11 +134,105 @@ header.sticky .navbar ul li a:hover {
 .inicio .inicio-content .txt3{
 	font-size: 40px;
 	margin: 5px 0;
+	margin-bottom: 25px;
 }
 
 .inicio .inicio-content .txt3 span {
 	color: crimson;
 	font-weight: 500;
+}
+
+.inicio .inicio-content button {
+	background-color: crimson;
+	border: 2px solid #d01c40;
+	border-radius: 10px;
+	color: whitesmoke;
+	cursor: pointer;
+	font-size: 18px;
+	padding: 12px 36px;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.inicio .inicio-content button:hover {
+	background-color: transparent;
+	color: crimson;
+}
+
+
+
+/* Responsive media query styling */
+
+@media screen and (max-width: 947px) {
+
+	header .max-width {
+		padding: 0 2%;
+	}
+
+	.navbar ul {
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		background-color: #111;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		height: 100vh;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		left: -100%;
+		position: fixed;
+		-webkit-transition: all .3s ease;
+		transition: all .3s ease;
+		top: 0;
+		width: 100%;
+	}
+
+	.navbar ul.active {
+		left: 0;
+	}
+
+	.navbar ul li{
+		padding: 35px;
+		-webkit-transform: translate3d(-20px,0,0);
+		transform: translate3d(-20px,0,0);
+	}
+
+	.navbar ul li a{
+		font-size: 30px;
+	}
+
+	.menu-btn, .menu-btn i {
+		display: block;
+		z-index: 999;
+	}
+
+	/*--home--*/
+	.inicio {
+		min-height: 650px;
+	}
+
+	.inicio .max-width {
+		margin: 230px 0 auto 2%;
+	}
+
+	.inicio .inicio-content .txt1{
+		font-size: 25px;
+	}
+
+	.inicio .inicio-content .txt2{
+		font-size: 58px;
+	}
+
+
+	.inicio .inicio-content .txt3{
+		font-size: 37px;
+	}
 }
 
 
