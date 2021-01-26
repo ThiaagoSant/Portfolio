@@ -90,7 +90,8 @@
     max-width: 800px;
   }
 
-  .sobre .sobre-content .column {
+  .sobre .sobre-content .column,
+  .contato .contato-content .column{
     width: 100%;
   }
 

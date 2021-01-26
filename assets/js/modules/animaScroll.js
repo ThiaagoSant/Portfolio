@@ -4,7 +4,7 @@ export default function animaScroll() {
       scrollTop = window.pageYOffset,
       className = "active";
 
-    if (allSections.length) {
+    if (allSections.length && scrollTop) {
       allSections.forEach((section) => {
         scrollTop > section.offsetTop - 400
           ? section.classList.add(className)
