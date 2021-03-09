@@ -120,6 +120,21 @@ li a,
   font-weight: 500;
 }
 
+.txt3 span::after {
+  animation: blink .7s infinite;
+  content: "|";
+  opacity: 1;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 .inicio .inicio-content button {
   background-color: crimson;
   border: 2px solid #d01c40;
