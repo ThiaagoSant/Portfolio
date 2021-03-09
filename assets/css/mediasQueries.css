@@ -35,8 +35,8 @@
 
   .navbar ul li {
     padding: 35px;
-    -webkit-transform: translate3d(-20px, 0, 0);
-    transform: translate3d(-20px, 0, 0);
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
   }
 
   .navbar ul li a {
