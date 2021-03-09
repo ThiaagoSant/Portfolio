@@ -108,6 +108,16 @@
   display: flex;
 }
 
+.contato .right form .field input:focus {
+  border: 1px solid crimson;
+  transition: border .3s ease;
+}
+
+.contato .right form .field textarea:focus {
+  border: 1px solid crimson;
+  transition: border .3s ease;
+}
+
 .contato .right form .field,
 .contato .right form .fields .field {
   height: 45px;
