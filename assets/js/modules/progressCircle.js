@@ -3,7 +3,7 @@ export default function progressCircle() {
     let options = {
       startAngle: -1.55,
       size: 159,
-      value: 0.85,
+      value: 0.95,
       fill: { color: "darkred" },
     };
 
@@ -17,15 +17,15 @@ export default function progressCircle() {
          );
 
     $(".js .bar").circleProgress({
-      value: 0.65,
+      value: 0.90,
     });
 
     $(".jquery .bar").circleProgress({
-      value: 0.4,
+      value: 0.86,
     });
 
     $(".seo .bar").circleProgress({
-      value: 0.3,
+      value: 0.75,
     });
   }
 
